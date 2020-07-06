@@ -1,14 +1,16 @@
-a=[10,7,54,60,33,4,5]
-x=100
+#coin exchange
+
+coins=[10,7,54,60,33,4,5]
+total_value=100
 result=[]
-while x>0:
-    m=max(a)
-    if max(a)<=x:
-        x=x-m
+while total_value>0:
+    m=max(coins)
+    if max(coins)<=total_value:
+        total_value=total_value-m
         result.append(m)
     else:
-        i=a.index(m)
-        a.pop(i)
+        i=coins.index(m)
+        coins.pop(i)
         continue
 
-print(result)
+print('Exchanged coins are :',result)
