@@ -16,6 +16,5 @@ while len(l)>2:
     del(l[0])
     del(l[0])
     l.append(res)
-if len(l)==2:
-    res=sorted(l[0]+l[1])
-print(res)
+
+print(sorted(l[0]+l[1]))
