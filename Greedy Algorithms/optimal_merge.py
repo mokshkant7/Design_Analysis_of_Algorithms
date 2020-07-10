@@ -1,6 +1,7 @@
+#optimal merge
+
 n=int(input("Enter the number of lists : "))
 l=[]
-r=[]
 for i in range(n):
     x=input("Enter List Vales separated by  comma : ",)
     l.append(x.split(','))
@@ -8,7 +9,6 @@ for i in range(n):
 def Sorting(lst):
     lst.sort(key=len)
     return lst
-
 
 while len(l)>2:
     Sorting(l)

@@ -1,4 +1,5 @@
 #fractional_knapsack
+
 M=float(input("Enter maximum Weight : "))
 n=int(input("Enter No of Objects : "))
 l=[]
@@ -11,7 +12,7 @@ for i in range(n):
      v=float(input(" Enter Respective Object Value : "))
      l.append((w,v))
 l.sort(key = lambda x: x[1]/x[0],reverse=True)
-#print(l)
+
 z=0
 weight=0
 res = [w[0] for w in l]
@@ -25,8 +26,7 @@ while z<n and weight<=M:
 
     weight=weight+(x[z]*res[z])
     z=z+1
-#print(res2)
-#print(x)
+
 sum=0
 q=0
 while q<n:
